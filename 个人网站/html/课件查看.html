@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课件查看</title>
+    <link rel="stylesheet" href="课件查看.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/课程简介.css">
+    <link rel="stylesheet" href="/css/swiper.min.css">
+    <script src="/js/jquery.js"></script>
+	<script src="/js/swiper.min.js"></script>
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><img src="/img/cumt.png" width="250px" height="50px"></div>
+        <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+				<li><a href="课程简介.html">课程简介</a></li>
+				<li><a href="地质博物馆.html">地质博物馆</a></li>
+				<li><a href="矿物博物馆.html">矿物博物馆</a></li>
+				<li><a href="课件查看.html">课件查看</a></li>
+        </ul>
+    </nav>
+
+    <div class="second-navbar">
+        <a href="#" data-chapter="chapter1">第一章 地球的宇宙环境</a>
+        <a href="#" data-chapter="chapter2">第二章 地壳的组成物质</a>
+        <a href="#" data-chapter="chapter3">第三章 地质构造的研究</a>
+        <a href="#" data-chapter="chapter4">第四章 风化作用系统</a>
+        <a href="#" data-chapter="chapter5">第五章 重力地貌系统</a>
+        <a href="#" data-chapter="chapter6">第六章 地面流水的地质作用及地貌特征</a>
+        <a href="#" data-chapter="chapter7">第七章 地下水的地质作用及水资源评价</a>
+        <a href="#" data-chapter="chapter8">第八章 风的地质作用</a>
+        <a href="#" data-chapter="chapter9">第九章 冰川的地质作用及地貌特征</a>
+        <a href="#" data-chapter="chapter10">第十章 冻土地貌的形成及特征</a>
+        <a href="#" data-chapter="chapter11">第十一章 湖泊海洋的地质作用</a>
+    </div>
+
+    <div class="index-list">
+        <div class="w chapter active" id="chapter1">
+            <h3 class="title">第一章 地球的宇宙环境</h3>
+            <div class="list-box">
+                <div class="l-item">
+        
+                        <div class="pdf-container">
+                            <embed src="/pdf/1第一章 地球的宇宙环境.pdf" width="900px" height="1000px" type="application/pdf">
+                        </div>
+                </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="index-list">
+        <div class="w chapter" id="chapter2">
+            <h3 class="title">第二章 地壳的组成物质</h3>
+            <div class="list-box">
+                <div class="l-item">
+        
+                        <div class="pdf-container">
+                            <embed src="/pdf/2第二章 矿物岩石.pdf" width="900px" height="1000px" type="application/pdf">
+                        </div>
+                       
+                  
+                </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="index-list">
+        <div class="w chapter" id="chapter3">
+            <h3 class="title">第三章 地质构造的研究</h3>
+            <div class="list-box">
+                <div class="l-item">
+                        <div class="pdf-container">
+                            <embed src="/pdf/3第三章 地质构造的研究.pdf" width="900px" height="1000px" type="application/pdf">
+                        </div>
+                </div>
+    </div>
+    </div>
+    </div>
+
+    <script>
+        // 导航栏
+        var flag = false;
+        $('.hbg').click(function(){
+            flag = !flag;
+            if(flag){
+                $('.line:nth-child(2)').hide()
+                $('.line:nth-child(1)').css({
+                    'transform': 'translateY(5px) rotate(225deg)'
+                })
+                $('.line:nth-child(3)').css({
+                    'transform': 'translateY(-3px) rotate(-225deg)'
+                })
+            }else{
+                $('.line:nth-child(2)').show()
+                $('.line:nth-child(1)').css({
+                    'transform': 'translateY(0) rotate(0)'
+                })
+                $('.line:nth-child(3)').css({
+                    'transform': 'translateY(0) rotate(0)'
+                })
+            }
+            
+            $('.navbar ul').stop().slideToggle();
+        })
+    
+         // 显示对应章节
+         document.querySelectorAll('.second-navbar a').forEach(link => {
+    link.addEventListener('click', function(event) {
+        event.preventDefault();
+        var chapterId = this.getAttribute('data-chapter');
+        document.querySelectorAll('.chapter').forEach(chapter => {
+            chapter.classList.remove('active');
+        });
+        document.getElementById(chapterId).classList.add('active');
+    });
+});
+    </script>
+</body>
+</html>
