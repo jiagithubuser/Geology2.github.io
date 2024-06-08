@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minerals and Rocks</title>
+    <link rel="stylesheet" href="/css/矿物博物馆.css">
+    <link rel="stylesheet" href="/css/地质博物馆vedio.css">
+    <link rel="stylesheet" href="/css/页码.css">
+</head>
+<body>
+    <!-- <header>
+        
+       
+    </header> -->
+
+    <nav class="navbar">
+        <div class="logo"><img src="/img/cumt.png" width="250px" height="50px"></div>
+        <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+				<li><a href="课程简介.html">课程简介</a></li>
+				<li><a href="地质博物馆.html">地质博物馆</a></li>
+				<li><a href="矿物博物馆.html">矿物博物馆</a></li>
+				<li><a href="课件查看.html">课件查看</a></li>
+        </ul>
+
+        <div class="hero">
+            <img src="hero.jpg" alt="Hero Image">
+            <div class="search-box">
+                <input type="text" placeholder="输入想搜索的矿物或岩石">
+                <button>搜索</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="video-container">
+        <video autoplay muted loop class="background-video">
+            <source src="/vedio/172865-848187827_medium.mp4" type="video/mp4">
+
+        </video>
+        <div class="overlay-text">
+            <div>探秘地质</div>
+            <div>矿石奇观</div>
+        </div>
+    </div> 
+
+
+    <main>
+        <section class="recommendations">
+            <h2>矿物与岩石</h2>
+            <div class="categories">
+                <button class="category-btn" onclick="filterCategory('矿物')"><span class="text">矿物</span></button>
+                <button class="category-btn" onclick="filterCategory('岩石')"><span class="text">岩石</span></button>
+                <button class="category-btn" onclick="filterCategory('全部')"><span class="text">全部</span></button>
+            </div>
+            <div class="recommendation-cards">
+                <div class="card" data-category="矿物">
+                    <img src="/img/石英.jpg" alt="Quartz">
+                    <p>石英</p>
+                </div>
+                <div class="card" data-category="矿物">
+                    <img src="/img/黄铁矿.jpg" alt="Pyrite">
+                    <p>黄铁矿</p>
+                </div>
+                <div class="card" data-category="矿物">
+                    <img src="/img/萤石2.jpg" alt="Granite">
+                    <p>萤石</p>
+                </div>
+                <div class="card" data-category="矿物">
+                    <img src="/img/重晶石.jpg" alt="Basalt">
+                    <p>重晶石</p>
+                </div>
+                <div class="card" data-category="矿物">
+                    <img src="/img/紫水晶1.jpg" alt="Amethyst">
+                    <p>紫水晶</p>
+                </div>
+                <div class="card" data-category="矿物">
+                    <img src="/img/方解石.jpg" alt="Amethyst">
+                    <p>方解石</p>
+                </div>
+
+                <div class="card" data-category="岩石">
+                    <img src="/img/花岗岩.jpg" alt="Granite">
+                    <p>花岗岩</p>
+                </div>
+                <div class="card" data-category="岩石">
+                    <img src="/img/玄武岩.jpg" alt="Basalt">
+                    <p>玄武岩</p>
+                </div>
+                <div class="card" data-category="岩石">
+                    <img src="/img/砂岩.jpg" alt="Amethyst">
+                    <p>砂岩</p>
+                </div>
+                <div class="card" data-category="岩石">
+                    <img src="/img/页岩.jpg" alt="Amethyst">
+                    <p>页岩</p>
+                </div>
+                <div class="card" data-category="岩石">
+                    <img src="/img/石灰岩.jpg" alt="Amethyst">
+                    <p>石灰岩</p>
+                </div>
+                <div class="card" data-category="岩石">
+                    <img src="/img/白云岩.jpg" alt="Amethyst">
+                    <p>白云岩</p>
+                </div>
+            </div>
+        </section>
+        <section class="strategies">
+            <h2>岩石理化性质</h2>
+            <div class="strategy-cards">
+                <div class="strategy-card" style="background-color: rgb(162, 244, 168);">
+               
+                    <p><b>花岗岩</b></p>
+                    <ol>
+                        <li>花岗岩是一种常见的火成岩，由石英、长石和斜长石等矿物组成。</li>
+                        <li>花岗岩具有较高的硬度，一般在6至7之间，属于莫氏硬度尺度上的硬质岩石。</li>
+                        <li>花岗岩具有均质的结构，呈块状或颗粒状。它的结晶粒度取决于岩浆的冷却速度，冷却速度越慢，结晶粒度越大。</li>
+                    </ol>
+            
+                </div>
+                <div class="strategy-card" style="background-color: rgb(254, 236, 213);">
+                    <p>玄武岩</p>
+                    <ol>
+                        <li>玄武岩是一种基性火成岩，由斜长石、辉石、角闪石、橄榄石等矿物组成。</li>
+                        <li>玄武岩通常具有较高的硬度，一般在5至6之间，也属于莫氏硬度尺度上的硬质岩石。</li>
+                        <li>玄武岩具有较强的抗风化性，能够抵抗自然风化和化学侵蚀，因此常被用于建筑和路基。</li>
+                    </ol>
+                </div>
+                <div class="strategy-card" style="background-color: rgb(239, 246, 147);">
+                    <p>砂岩</p>
+                    <ol>
+                        <li>砂岩是一种沉积岩，由石英、长石、岩屑等颗粒状物质组成，并通过水或风的运输沉积而成。</li>
+                        <li>砂岩具有颗粒状或块状结构，颗粒之间常用水泥质或黏土质物质粘结。</li>
+                        <li>砂岩的抗风化性较差，容易受到水侵蚀和物理风化的影响，长时间暴露于风化环境下容易破碎或崩解。</li>
+                    </ol>
+                </div>
+                <div class="strategy-card" style="background-color: rgb(169, 248, 124);">
+                    <p>页岩</p>
+                    <ol>
+                        <li>页岩是一种变质岩或沉积岩，由泥粒、粘土矿物、矿物颗粒等组成，其主要成分是粘土矿物。</li>
+                        <li>页岩通常具有层理结构，易于在垂直方向上分层剥离。由于其沉积过程中沉积物的平行沉积，使得页岩具有这种特殊的结构。</li>
+                        <li>页岩的抗风化性较差，容易受到水侵蚀和物理风化的影响，长时间暴露于风化环境下容易破碎或剥落。</li>
+                    </ol>
+                </div>
+                <div class="strategy-card" style="background-color: rgb(134, 255, 251);">
+                    <p>石灰岩</p>
+                    <ol>
+                        <li>石灰岩是一种沉积岩，主要由碳酸钙矿物组成，通常是方解石或白云石。</li>
+                        <li>灰岩的硬度相对较低，一般在莫氏硬度尺度上为3至4之间。这使得它相对容易受到机械侵蚀。</li>
+                        <li>石灰岩通常具有层理或块状结构，其中的层理可能是由沉积过程中的变化或岩层之间的变化所形成。</li>
+                    </ol>
+                </div>
+                <div class="strategy-card" style="background-color: rgb(202, 142, 255);">
+                    <p>白云岩</p>
+                    <ol>
+                        <li>白云岩是一种沉积岩，主要由碳酸钙和/或碳酸镁矿物组成，其中主要矿物是白云石。</li>
+                        <li>白云岩的硬度相对较低，一般在莫氏硬度尺度上为3.5至4之间。这使得它相对容易受到机械侵蚀。</li>
+                        <li>白云岩通常具有块状或层状结构，其中的层理可能是由沉积过程中的变化或岩层之间的变化所形成。</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="pagination">
+        <a href="index.html">1</a>
+        <a href="课程简介.html">2</a>
+        <a href="地质博物馆.html">3</a>
+        <a href="矿物博物馆.html" class="active">4</a>
+        <a href="课件查看.html">5</a>
+        <a href="#">></a>
+        <span>共5页, 跳转到</span>
+        <input type="number" id="page-input" min="1" max="5">
+        <span>页</span>
+        <button id="jump-button">确定</button>
+    </div>
+    <footer>
+        <p>© 2024 地质地貌学习网站. 版权所有.</p>
+    </footer>
+    <script src="/js/矿物博物馆.js"></script>
+</body>
+</html>
+

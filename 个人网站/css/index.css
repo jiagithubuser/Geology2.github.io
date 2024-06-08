@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0fbcb9;
+    padding: 10px 20px;
+  
+}
+
+.logo {
+    font-size: 24px;
+    color: #fff;
+
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px 0;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff6347;
+    transform: scale(1.1);
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+}
+
+.container {
+    display: flex;
+    height:auto;
+    
+}
+.container p{
+    color:rgb(0, 0, 0);
+}
+
+.left, .right {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ddd; 
+    box-shadow: 0 0 10px rgba(61, 178, 210, 0.1);
+    margin: 10px; 
+    border-radius: 10px; 
+}
+
+.left {
+    background-color: #7393BE;
+    
+   
+}
+
+.right {
+    background-color: #3D94AC;
+}
+
+.container_img {
+    display: flex;
+    align-items: center;
+    margin: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.image_left {
+    margin-top: 10px;
+    flex: 1;
+    text-align: center; 
+}
+.text_right {
+    flex: 1;
+    text-indent: 2em;
+    font-size: 20px;
+    font-family: 宋体;
+
+}
+
+
+.footer-link{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+    height: 100px;
+    padding: 40px 0;
+    background-color: #8bd1b5;
+
+   
+  }
+.footer-link ul{
+    list-style: none;
+    
+    width: 160px;
+    text-align: center;
+    color: #eff4f3;
+    font-size: 15px;
+    line-height: 1.25;
+}
+.footer-link ul a{
+    font-size: 13px;
+    color:#4782d9;
+    text-align: center;
+}
+.footer-link ul li{
+    margin-top: 10px;
+    text-align: center;
+}
+p{
+    font-family: 宋体;
+}
+ul li{
+    font-family: 宋体;
+} 
+
+
